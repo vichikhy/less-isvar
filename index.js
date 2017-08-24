@@ -1,5 +1,5 @@
 module.exports = {
-    install: function(less, pluginManager) {
+    install: function(less, manager) {
         less.functions.functionRegistry.addMultiple(require("./isvar")(less));
     },
     printUsage: function() {
